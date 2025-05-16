@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bereia+</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Bereia+</h1>
+    <label>Título do conteúdo:</label>
+    <input type="text" id="video-title" readonly />
+
+    <label>
+      <input type="checkbox" id="use-timecode" checked />
+      Usar timecode
+    </label>
+    <input type="text" id="timecode" readonly />
+
+    <label>Descrição do trecho:</label>
+    <textarea id="description" rows="3"></textarea>
+
+    <label>Tema:</label>
+    <select id="topic">
+      <option value="discernimento">Discernimento</option>
+      <option value="teologia">Teologia</option>
+      <option value="cultura">Cultura</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <label>Tags:</label>
+    <input type="text" id="tags" placeholder="Separadas por vírgula"/>
+
+    <label>Classificação:</label>
+    <select id="rating">
+      <option value="excelente">Excelente</option>
+      <option value="bom">Bom</option>
+      <option value="ruim">Ruim</option>
+    </select>
+
+    <label>Concordo com o conteúdo?</label>
+    <select id="agree">
+      <option value="sim">Sim</option>
+      <option value="nao">Não</option>
+      <option value="parcial">Parcialmente</option>
+    </select>
+
+    <button id="save-btn">Salvar Curadoria</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

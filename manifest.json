@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Bereia+",
+    "description": "Curadoria de conteúdo com propósito — selecione, avalie e organize vídeos e artigos com discernimento.",
+    "version": "0.1",
+    "permissions": ["tabs", "activeTab", "storage", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "host_permissions": [
+      "*://*.youtube.com/*",
+      "*://*/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
